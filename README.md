@@ -33,7 +33,7 @@ version is 4.3.17.
 
   5. Open a new Zsh terminal window or tab.
 
-  6. Keep updated with upstream
+  6. Keep updated with upstream:
 
         git remote add upstream git@github.com:sorin-ionescu/prezto.git
 
