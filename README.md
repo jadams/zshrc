@@ -17,13 +17,13 @@ version is 4.3.17.
 
   2. Clone the repository:
 
-        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+        git clone --recursive git@github.com:jadams/prezto.git "${ZDOTDIR:-$HOME}/.zsh"
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
 
         setopt EXTENDED_GLOB
-        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+        for rcfile in "${ZDOTDIR:-$HOME}"/.zsh/runcoms/^README.md(.N); do
           ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done
 
@@ -32,6 +32,13 @@ version is 4.3.17.
         chsh -s /bin/zsh
 
   5. Open a new Zsh terminal window or tab.
+
+  6. Keep updated with upstream
+
+        git remote add upstream git@github.com:sorin-ionescu/prezto.git
+
+        git fetch upstream
+        git rebase upstream/master
 
 ### Troubleshooting
 
