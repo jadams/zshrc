@@ -17,11 +17,7 @@ version is 4.3.17.
 
   2. Clone the repository:
 
-<<<<<<< HEAD
         git clone --recursive git@github.com:jadams/zshrc.git "${ZDOTDIR:-$HOME}/.zsh"
-=======
-        git clone --recursive git@github.com:jadams/prezto.git "${ZDOTDIR:-$HOME}/.zsh"
->>>>>>> 2d51e7b1f733076b5028bb9ef3a34a4390d5bb61
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
